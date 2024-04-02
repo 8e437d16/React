@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <!-- Latest slimi minified jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="./js/bootstrap.min.js"></script>
+        <script>
+            const projectCategoryBadgeAttributes = { 'NGS': 'class="badge badge-danger"', 'RPA': 'class="badge badge-secondary"', 'IoT': 'class="badge badge-primary"' };
+            const languages = { 'C': 'class="badge badge-primary"',
+                                'C++': 'class="badge badge-primary"',
+                                'C#': 'class="badge badge-primary"',
+                                'Java': 'class="badge badge-danger"',
+                                'Python': 'class="badge badge-warning"' }
+            const completedProjects = [ 
+            		['NGS', 'FASTQ/A Quality Statistics, Geumcheon-gu, Seoul', 'Porting from C to Python and Optimization<br>Improved performance by ~150%' ] ,
+            		['NGS', 'Sequencing Depth & Coverage, Geumcheon-gu, Seoul', 'Optimization<br>Improved performance by tens to hundreds of percent.'],
+            		['RPA', 'Project Documents Download & Analysis, Gangdong-gu, Seoul', 'Automation<br>Improved work efficiency by dozens of hours a day.'],
+            		['RPA', 'AI Dataset Up & Down, Document Analysis, Yeonje-ro, Busan', 'Automation<br>Improved work efficiency by dozens of hours a day.'] ];
+            
+            const ongoingProjects = [ 
+            ['IoT', 'Smart Fire Alarm System', 'Integrated Fire Alarm System<br>ESP32-S3, Android, Azure Functions & Notification Hub'] ];
+
+
+            function createElement(tagName, attributes, text = null) {
+                let element = document.createElement(tagName);
+                let pattern = /([^" ]+="[^"]*")/g;
+                let matches = [];
+                let match;
+
+                do {
+                    match = pattern.exec(attributes);
+
+                    if(match) {
+                        let [attributeName, attributeValue] = match[1].split('=');
+                        
+                        element.setAttribute(attributeName, attributeValue.replace(/"/g, ''));
+                    }
+                } while(match);
+
+
+
+                if(text != null)
+                    element.innerHTML = text;
+
+                return element;
+            }
+
+            function createElementByProjects(project_list, parent = null) {
+                project_list.forEach((lst, idx) => {
+		            let [cat, title, desc] = lst;
+
+		            let outer_div = createElement('div', 'style="display: flex; align-items: baseline; margin-top: 10px;"');
+		            outer_div.appendChild(createElement('span', projectCategoryBadgeAttributes[cat], cat));
+		            outer_div.appendChild(createElement('h6', 'class="card-subtitle mb-2 text-muted" style="margin-left: 5px;"', title));
+
+                    if(parent != null) {
+                        parent.appendChild(outer_div);
+		                parent.appendChild(createElement('p', 'class="card-text" style="margin-left: 3px;"', desc));	
+                    }
+	            });
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+                let root_div = createElement('div', 'class="container" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"');
+                let card_div = createElement('div', 'class="card" style="width: 36rem;"');
+
+                let cardBody_div = createElement('div', 'class="card-body"');
+                let cardTitle_div = createElement('h5', 'class="card-title"', 'LEE SEUNG HEON');
+                let cardText_div = createElement('p', 'class="card-text"', 'Republic of Korea<br>2021, Kyungsung University Electronic Engineering');
+
+                cardBody_div.appendChild(cardTitle_div);
+                cardBody_div.appendChild(cardText_div);
+
+                card_div.appendChild(cardBody_div);
+
+                let ul = createElement('ul', 'class="list-group list-group-flush"');
+
+                let languages_root_div = createElement('div');
+                let languages_li = createElement('li', 'class="list-group-item"');
+                languages_li.appendChild(createElement('h6', 'class="card-title"', 'Languages'));
+                let languages_div = createElement('div');
+            
+                Object.entries(languages).forEach(function([key, value]) {
+                    languages_div.appendChild(createElement('span', value, key));
+                    languages_div.appendChild(document.createTextNode(' '));
+                });
+
+                languages_li.appendChild(languages_div);
+                languages_root_div.appendChild(languages_li);
+
+                let projects_root_div = createElement('div');
+                let completedProjects_li = createElement('li', 'class="list-group-item"');
+                let completedProjects_div = createElement('div');
+                
+                completedProjects_div.appendChild(createElement('h6', 'class="card-title"', 'Completed Projects'));
+
+                createElementByProjects(completedProjects, completedProjects_div);
+
+                completedProjects_li.appendChild(completedProjects_div);
+
+                projects_root_div.appendChild(completedProjects_li);
+
+                let ongoingProjects_li = createElement('li', 'class="list-group-item"');
+                let ongoingProjects_div = createElement('div');
+
+                ongoingProjects_div.appendChild(createElement('h6', 'class="card-title"', 'Ongoing Projects'));
+
+                createElementByProjects(ongoingProjects, ongoingProjects_div);
+
+                projects_root_div.appendChild(ongoingProjects_li);
+
+                ongoingProjects_li.appendChild(ongoingProjects_div);
+
+                let contact_div = createElement('div', ' class="card-body" style="display: flex; justify-content: center; align-items: center;"');
+                contact_div.appendChild(createElement('a', 'href="mailto:lyra@ks.ac.kr" class="card-link btn btn-outline-primary"', 'Contact'));
+
+                ul.appendChild(languages_root_div);
+                ul.appendChild(projects_root_div);
+
+                card_div.appendChild(ul);
+                card_div.appendChild(contact_div);
+
+                root_div.appendChild(card_div);
+                document.body.appendChild(root_div);
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
