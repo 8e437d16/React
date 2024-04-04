@@ -19,7 +19,7 @@ function App() {
 
         <ListGroup variant="flush">
           <div>
-            <ListGroup.Item style={{ borderWidth: '0' }}>
+            <ListGroup.Item style={{ borderWidth: '0', borderTopWidth: '1', borderBottomWidth: '1' }}>
               <CardTitle as="h6" style={{ fontWeight: "bold" }}>
                 Languages
               </CardTitle>
@@ -109,11 +109,11 @@ function App() {
                     className="mb-2 text-muted"
                     style={{ marginLeft: "5px", fontWeight: "bold" }}
                   >
-                    Project Documents Download & Analysis, Gangdong-gu, Seoul
+                    Project Documents Download & Extraction, Gangdong-gu, Seoul
                   </Card.Subtitle>
                 </div>
                 <CardText style={{ marginTop: "3px", marginLeft: "3px" }}>
-                  {`Automation\nImproved work efficiency by dozens of hours a day.`}
+                  {`Automation\nDocument download and contents extraction, validation.`}
                 </CardText>
 
                 <div
@@ -133,7 +133,7 @@ function App() {
                   </Card.Subtitle>
                 </div>
                 <CardText style={{ marginTop: "3px", marginLeft: "3px" }}>
-                  {`Automation\nImproved work efficiency by dozens of hours a day.`}
+                  {`Automation\nCVAT upload & download. company logs analysis.`}
                 </CardText>
               </div>
             </ListGroup.Item>
