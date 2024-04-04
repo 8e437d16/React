@@ -13,7 +13,7 @@ function App() {
     <div style={{ whiteSpace: "pre-wrap" }}>
       <Card style={{ width: "36rem" }}>
         <CardBody>
-          <CardTitle style={{ fontWeight: "bold" }}>LEE SEUNG HEON</CardTitle>
+          <CardTitle style={{ fontWeight: "bold" }}>RESERVED</CardTitle>
           <CardText>{`Republic of Korea\n2021, Kyungsung University Electronic Engineering`}</CardText>
         </CardBody>
 
