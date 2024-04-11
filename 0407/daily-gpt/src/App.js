@@ -6,14 +6,16 @@ import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import HeaderDateTime from './components/HeaderDateTime';
 import NewsList from './components/NewsList';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Container style={{ width: '720px' }}>
-        <Header />
-        <HeaderDateTime />
-        <Divider />
-        <NewsList />
+      <Header />
+      <HeaderDateTime />
+      <Divider />
+      <NewsList />
+      <Footer />
     </Container>
   );
 }
