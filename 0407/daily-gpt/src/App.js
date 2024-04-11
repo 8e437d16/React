@@ -9,10 +9,8 @@ import NewsList from './components/NewsList';
 
 function App() {
   return (
-    <Container>
-        <Box style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Header />
-        </Box>
+    <Container style={{ width: '720px' }}>
+        <Header />
         <HeaderDateTime />
         <Divider />
         <NewsList />
