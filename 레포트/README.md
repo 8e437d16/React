@@ -8,7 +8,7 @@
 
 ### HTML, JS, React JSX로 자기소개 페이지 만들기
 
-[루트 링크](https://github.com/8e437d16/React/tree/master/0331)  
+[루트 링크](https://github.com/8e437d16/React/tree/master/0331)
 
 [HTML 링크](https://8e437d16.github.io/React/0331/html/index.html)  
 스크린샷: HTML.png  
@@ -19,7 +19,7 @@
 
 
 [React 루트 링크](https://github.com/8e437d16/React/tree/master/0331/react-ps)  
-[React 빌드 링크]()
+[React 빌드 링크](https://8e437d16.github.io/React/0331/react-ps/build/index.html)  
 스크린샷: React.png  
 
 ---
@@ -34,7 +34,8 @@ Daily GPT.png
 ### 5개 이상의 컴포넌트와 2개 이상의 props를 전달하는 컴포넌트를 하나 이상 포함하는 예제
 
 [루트 링크](https://github.com/8e437d16/React/tree/master/0407)  
-Figma로 기획한 서비스의 개발 일부분
+[빌드 링크](https://8e437d16.github.io/React/0407/build/index.html)
+Figma로 기획한 서비스의 PoC
 
 ---
 
@@ -45,5 +46,5 @@ Figma로 기획한 서비스의 개발 일부분
 4. 1개 이상의 props와 1개 이상의 state를 가진 컴포넌트를 하나 이상 포함
 5. 회원가입 페이지 
 
-[Components, Props, States 과제](RESERVED)
-[회원가입 페이지](RESERVED)
+[Components, Props, States 과제](RESERVED)  
+[회원가입 페이지](RESERVED)  
