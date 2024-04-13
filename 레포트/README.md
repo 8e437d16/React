@@ -34,7 +34,7 @@ Daily GPT.png
 ### 5개 이상의 컴포넌트와 2개 이상의 props를 전달하는 컴포넌트를 하나 이상 포함하는 예제
 
 [루트 링크](https://github.com/8e437d16/React/tree/master/0407)  
-[빌드 링크](https://8e437d16.github.io/React/0407/build/index.html)  
+[빌드 링크](8e437d16.github.io/React/0407/daily-gpt/build/index.html)  
 Figma로 기획한 서비스의 PoC
 
 ---
