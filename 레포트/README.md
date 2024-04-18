@@ -47,5 +47,5 @@ Figma로 기획한 서비스의 PoC
 
 [Components, Props, States 과제](RESERVED)
 
-[회원가입 페이지](https://8e437d16.github.io/React/0416/signup/build/index.html)
+[회원가입 페이지](https://8e437d16.github.io/React/0416/signup/build/index.html)  
 스크린샷: Signup.PNG
