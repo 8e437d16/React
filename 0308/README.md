@@ -5,7 +5,7 @@
 마크업 언어로 작성된 문서를 표시, 스타일링 하는데 사용되는 스타일 언어
 
 # JavaScript
-Ecma International의 사양을 준수하는 범용 스크립트 언어  
+Ecma International의 사양을 준수하는 범용 스크립트 언어  // TODO; Reserved;  프로토타입 언어;
 
 # DOM(Document Object Model)
 HTML, XML 프로그래밍 API. 문서의 논리적 구조, 접근, 조작 방식을 정의한다  
