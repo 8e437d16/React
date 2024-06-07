@@ -1,0 +1,31 @@
+{
+  "market": {
+    "name": "마켓",
+    "url": "https://www.yna.co.kr/market-plus/all?site=navi_market_plus_depth02"
+  },
+
+  "industry": {
+    "name": "산업",
+    "url": "https://www.yna.co.kr/industry/all?site=navi_industry_depth02"
+  },
+
+  "society": {
+    "name": "사회",
+    "url": "https://www.yna.co.kr/society/all?site=navi_society_depth02"
+  },
+
+  "politics": {
+    "name": "정치",
+    "url": "https://www.yna.co.kr/politics/all?site=navi_politics_depth02"
+  },
+
+  "international": {
+    "name": "세계",
+    "url": "https://www.yna.co.kr/international/all?site=navi_international_depth02"
+  },
+
+  "culture": {
+    "name": "문화",
+    "url": "https://www.yna.co.kr/culture/all?site=navi_culture_depth02"
+  }
+}
